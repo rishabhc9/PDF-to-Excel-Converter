@@ -1,0 +1,1 @@
+{"input_folder": "/Users/rishabhchopda/Desktop/PDF to Excel Converter/input", "output_folder": "/Users/rishabhchopda/Desktop/PDF to Excel Converter/output", "column_names": ["Channel", " Program", " Day", " Time", " Duration", " Spots", " FCT", " Net Rate", " Net Cost"], "regex_pattern": "\\w{3}-\\w{3}", "filter_index": 2}

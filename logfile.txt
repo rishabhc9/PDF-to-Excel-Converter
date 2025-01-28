@@ -1,0 +1,6 @@
+2025-01-29 04:22:20.032950 - Processing started.
+2025-01-29 04:22:20.043845 - Processing test1.pdf with 1 pages.
+2025-01-29 04:22:20.180496 - Successfully processed test1.pdf and saved to /Users/rishabhchopda/Desktop/PDF to Excel Converter/output/test1.xlsx.
+2025-01-29 04:24:33.732961 - Processing started.
+2025-01-29 04:24:33.743197 - Processing test1.pdf with 1 pages.
+2025-01-29 04:24:33.876651 - Successfully processed test1.pdf and saved to /Users/rishabhchopda/Desktop/PDF to Excel Converter/output/test1.xlsx.
