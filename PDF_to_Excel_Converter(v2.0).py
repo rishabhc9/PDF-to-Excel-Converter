@@ -169,13 +169,13 @@ def main():
     columns_entry.insert(0, ', '.join(config.get('column_names', [])))  # No pre-loaded config
 
     # Regex for Filtering
-    tk.Label(root, text="Regex for Filtering (Example - \w{3}-\w{3}):", anchor="w").grid(row=3, column=0, sticky="w", padx=10, pady=5)
+    tk.Label(root, text="Regex for Identifying Table (Example - \w{3}-\w{3}):", anchor="w").grid(row=3, column=0, sticky="w", padx=10, pady=5)
     regex_entry = tk.Entry(root, width=50)
     regex_entry.grid(row=3, column=1, padx=10, pady=5)
     regex_entry.insert(0, config.get('regex_pattern', ''))  # No pre-loaded config
 
     # Filter Index
-    tk.Label(root, text="Index to Apply Filter (0-based):", anchor="w").grid(row=4, column=0, sticky="w", padx=10, pady=5)
+    tk.Label(root, text="Index for Regex (0-based):", anchor="w").grid(row=4, column=0, sticky="w", padx=10, pady=5)
     index_entry = tk.Entry(root, width=50)
     index_entry.grid(row=4, column=1, padx=10, pady=5)
     index_entry.insert(0, str(config.get('filter_index', 0)))  # No pre-loaded config
