@@ -107,7 +107,7 @@ def start_conversion(input_entry, output_entry, columns_entry, regex_entry):
 
 def main():
     root = Tk()
-    root.title("Invisible Grid Table PDF")
+    root.title("Invisible Grid Table PDF to Excel Converter")
 
     Label(root, text="Input Folder:").grid(row=0, column=0, sticky="w", padx=10, pady=5)
     input_entry = Entry(root, width=50)

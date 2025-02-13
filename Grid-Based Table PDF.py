@@ -145,7 +145,7 @@ def start_conversion(input_entry, output_entry, columns_entry, regex_entry, inde
 
 def main():
     root = tk.Tk()
-    root.title("Grid-Based Table PDF")
+    root.title("Grid-Based Table PDF to Excel Converter")
     config = {}
 
     # Input Folder
