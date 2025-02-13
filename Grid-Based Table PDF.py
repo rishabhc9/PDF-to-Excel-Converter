@@ -145,7 +145,7 @@ def start_conversion(input_entry, output_entry, columns_entry, regex_entry, inde
 
 def main():
     root = tk.Tk()
-    root.title("PDF to Excel Converter (v2.0)")
+    root.title("Grid-Based Table PDF")
     config = {}
 
     # Input Folder
@@ -163,7 +163,7 @@ def main():
     tk.Button(root, text="Browse", command=lambda: browse_output_folder(output_entry)).grid(row=1, column=2, padx=10, pady=5)
 
     # Column Names
-    tk.Label(root, text="Column Names (Example - Name,Email,Address):", anchor="w").grid(row=2, column=0, sticky="w", padx=10, pady=5)
+    tk.Label(root, text="Column Names (Example - Name, Email, Phone Number):", anchor="w").grid(row=2, column=0, sticky="w", padx=10, pady=5)
     columns_entry = tk.Entry(root, width=50)
     columns_entry.grid(row=2, column=1, padx=10, pady=5)
     columns_entry.insert(0, ', '.join(config.get('column_names', [])))  # No pre-loaded config
