@@ -3,10 +3,10 @@ import tkinter as tk
 from tkinter import Button
 
 def load_program1():
-    subprocess.Popen(["python", "Grid-Based Table PDF.py"])
+    subprocess.Popen(["python", "Visible Grid Table Converter.py"])
 
 def load_program2():
-    subprocess.Popen(["python", "Invisible Grid Table PDF.py"])
+    subprocess.Popen(["python", "Invisible Grid Table Converter.py"])
 
 root = tk.Tk()
 root.title("PDF to Excel Conveerter")
