@@ -265,7 +265,7 @@ def browse_output_folder(entry):
 def main():
     global root
     root = tk.Tk()
-    root.title("Grid-Based Table PDF to Excel Converter with Regex Support")
+    root.title("Grid-Based Table PDF to Excel Converter")
 
     # Input Folder
     tk.Label(root, text="Input Folder:").grid(row=0, column=0, sticky="w", padx=10, pady=5)
