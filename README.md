@@ -1,9 +1,5 @@
 # PDF to Excel Converter
 
-## Main UI
-
-<img width="293" alt="Screenshot 2025-03-03 at 12 44 14 AM" src="https://github.com/user-attachments/assets/75fb8e9c-e171-42f8-b40f-395a71eaa4ce" />
-
 
 
 ## UI For Extracting PDFs with tables that do not have visible grid lines around cells (Data is aligned using spacing rather than clear dividers)
