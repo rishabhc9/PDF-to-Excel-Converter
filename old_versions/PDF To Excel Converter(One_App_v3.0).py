@@ -871,7 +871,7 @@ class FileOrganizerTool:
         
         # Initialize date UI
         self.update_date_ui()
-
+    
     def update_date_ui(self, event=None):
         # Clear previous widgets
         for widget in self.date_input_frame.winfo_children():
@@ -880,19 +880,21 @@ class FileOrganizerTool:
         criteria = self.date_criteria.get()
         
         if criteria in ["Created on", "Created after", "Created before"]:
-            ttk.Label(self.date_input_frame, text="Date (dd-mm-yyyy):").pack(side="left")
+            ttk.Label(self.date_input_frame, text="Date:").pack(side="left")
             self.date_entry = ttk.Entry(self.date_input_frame, width=10)
             self.date_entry.pack(side="left", padx=5)
+            ttk.Button(self.date_input_frame, text="📅", command=lambda: self.show_calendar(self.date_entry)).pack(side="left")
         elif criteria == "Between dates":
-            ttk.Label(self.date_input_frame, text="From (dd-mm-yyyy):").pack(side="left")
+            ttk.Label(self.date_input_frame, text="From:").pack(side="left")
             self.date_from_entry = ttk.Entry(self.date_input_frame, width=10)
             self.date_from_entry.pack(side="left", padx=5)
+            ttk.Button(self.date_input_frame, text="📅", command=lambda: self.show_calendar(self.date_from_entry)).pack(side="left")
             
-            ttk.Label(self.date_input_frame, text="To (dd-mm-yyyy):").pack(side="left", padx=10)
+            ttk.Label(self.date_input_frame, text="To:").pack(side="left", padx=10)
             self.date_to_entry = ttk.Entry(self.date_input_frame, width=10)
-            self.date_to_entry.pack(side="left", padx=5)    
+            self.date_to_entry.pack(side="left", padx=5)
+            ttk.Button(self.date_input_frame, text="📅", command=lambda: self.show_calendar(self.date_to_entry)).pack(side="left")
     
-
     def setup_name_tab(self):
         # Position options
         ttk.Label(self.name_tab, text="Search position:").grid(row=0, column=0, sticky="w", padx=10, pady=5)
@@ -969,7 +971,7 @@ class FileOrganizerTool:
     
     def validate_date(self, date_str):
         try:
-            return datetime.strptime(date_str, "%d-%m-%Y").date()
+            return datetime.strptime(date_str, "%Y-%m-%d").date()
         except ValueError:
             return None
     
